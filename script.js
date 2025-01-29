@@ -108,3 +108,38 @@ let n = 6
 }
 hollowSquare(6);
 
+//8] transponse matrix //
+let matrixArray=[
+  [1,2,3],
+  [4,5,6],
+  [7,8,9],
+];
+let trasnposedMatrix=[];
+
+for(let i=0; i<matrixArray.length; i++){
+ console.log(matrixArray[i]);
+ let newMatrix=[];
+ for(let j=0; j<matrixArray[i].length; j++){
+    console.log(matrixArray[j][i]);
+    newMatrix.push(matrixArray[j][i]); 
+ }
+ console.log(newMatrix);
+ trasnposedMatrix.push(newMatrix)
+}
+console.log(trasnposedMatrix);
+
+
+//9] factorial number //
+
+function factorialNumber(n){
+  let fact=1;
+for(let i=n; i>0; i--){
+   fact = fact*i;
+}
+console.log(fact);
+
+}
+
+
+factorialNumber(4)
+
